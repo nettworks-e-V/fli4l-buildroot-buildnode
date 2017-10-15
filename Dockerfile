@@ -1,4 +1,4 @@
-FROM starwarsfan/fli4l-buildroot:latest
+FROM starwarsfan/fli4l-buildroot-container:latest
 MAINTAINER Yves Schumann <yves@eisfair.org>
 
 # Configuration for Jenkins swarm
@@ -7,7 +7,7 @@ MAINTAINER Yves Schumann <yves@eisfair.org>
 ARG JENKINS_IP="localhost"
 ARG USERNAME="admin"
 ARG PASSWORD="admin"
-ARG DESCRIPTION="Swarm node for fli4l-Builds"
+ARG DESCRIPTION="Swarm node with fli4l buildroot"
 ARG LABELS="linux swarm fli4l-buildroot"
 ARG NAME="generic-swarm-node"
 ARG UID="1000"
