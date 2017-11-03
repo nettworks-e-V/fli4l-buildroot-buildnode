@@ -25,7 +25,6 @@ ENV JENKINS_URL=http://$JENKINS_IP \
 # Setup jenkins account
 # Create working directory
 # Change user UID
-# Fix ulimit issue regarding start of java on arch linux
 RUN useradd --create-home --home-dir /home/jenkins --shell /bin/bash --uid ${UID} jenkins \
  && echo "jenkins:jenkins" | chpasswd \
  && chown jenkins:jenkins /home/jenkins -R \
@@ -43,7 +42,7 @@ ADD "https://repo.jenkins-ci.org/releases/org/jenkins-ci/plugins/swarm-client/${
 RUN chown -R jenkins:jenkins /data
 
 # Switch to user jenkins
-#USER jenkins
+USER jenkins
 
 # Start ssh
 #CMD ["/usr/sbin/sshd", "-D"]
