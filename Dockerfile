@@ -10,7 +10,7 @@ ARG USERNAME="admin"
 ARG PASSWORD="admin"
 ARG DESCRIPTION="Swarm node with fli4l buildroot"
 ARG LABELS="linux swarm fli4l-buildroot"
-ARG NAME="generic-swarm-node"
+ARG NAME="fli4l-buildroot-swarm-node"
 ARG UID="1000"
 
 # Environment variables for swarm client
