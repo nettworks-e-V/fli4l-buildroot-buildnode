@@ -1,4 +1,4 @@
-FROM starwarsfan/fli4l-buildroot-container:latest
+FROM nettworksevtooling/fli4l-buildroot-container:latest
 MAINTAINER Yves Schumann <yves@eisfair.org>
 
 # Configuration for Jenkins swarm
